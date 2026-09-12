@@ -1,0 +1,667 @@
+{
+ "fiction": {
+  "label": "Fiction genres",
+  "items": [
+   {
+    "name": "Action thriller",
+    "description": "Action thrillers include fast plot lines, violence, high-speed chases, and a life-changing journey for the protagonist.",
+    "examples": "The Summer House by James Patterson and The 6:20 Man by David Baldacci."
+   },
+   {
+    "name": "Action/Adventure fiction",
+    "description": "The first genre in our list of book genres is action & adventure fiction. Action & adventure books contain a risk-filled journey and a thrilling series of action sequences. The threat of danger is ever-present, and the plot moves quickly.",
+    "examples": "The Ryanverse series by Tom Clancy and Jurassic Park by Michael Crichton."
+   },
+   {
+    "name": "Adventure",
+    "description": "Adventure novels typically involve characters undertaking a journey, often filled with excitement, challenges, and exploration.",
+    "examples": "\"The Adventures of Tom Sawyer\" by Mark Twain, \"The Hobbit\" by J.R.R. Tolkien, \"Jurassic Park\" by Michael Crichton"
+   },
+   {
+    "name": "Alternate History",
+    "description": "Alternate history explores speculative scenarios where historical events unfold differently, leading to alternative outcomes.",
+    "examples": "\"The Man in the High Castle\" by Philip K. Dick, \"11/22/63\" by Stephen King, \"Fatherland\" by Robert Harris"
+   },
+   {
+    "name": "Apocalyptic sci-fi",
+    "description": "Apocalyptic science fiction takes place after an apocalyptic event and focuses on how the remaining humans survive. It is similar to post-apocalyptic horror but focuses more on the reality of life and less on scare tactics and monsters.",
+    "examples": "Parable of the Sower by Octavia E. Butler and Earth Abides by George R. Stewart."
+   },
+   {
+    "name": "Biographical Fiction",
+    "description": "Biographical fiction is based on the life of a real person but includes fictionalized elements to enhance the narrative.",
+    "examples": "\"The Other Boleyn Girl\" by Philippa Gregory, \"The Paris Wife\" by Paula McLain, \"The Immortal Life of Henrietta Lacks\" by Rebecca Skloot"
+   },
+   {
+    "name": "Black Comedy",
+    "description": "Black comedy uses humor to explore serious or taboo subjects, often with a satirical or darkly humorous tone.",
+    "examples": "\"Catch-22\" by Joseph Heller, \"American Psycho\" by Bret Easton Ellis, \"Good Omens\" by Neil Gaiman and Terry Pratchett"
+   },
+   {
+    "name": "Body Horror",
+    "description": "Body horror features graphic mutilations, disfigurations, or violations of the human body.",
+    "examples": "Frankenstein by Mary Shelley and Rosemary’s Baby by Ira Levin"
+   },
+   {
+    "name": "Caper",
+    "description": "The first mystery subgenre on our list of book genres is capers. Capers are usually told from the point of view of the thief. They are light-hearted and humorous mysteries that focus on how (and if) they can get away with the crime.",
+    "examples": "The Heist by Daniel Silva and The Burglar Who Counted the Spoons by Lawrence Block."
+   },
+   {
+    "name": "Children’s fiction",
+    "description": "Children’s fiction includes made-up stories that are written specifically for children. They cover themes and language that are age-appropriate and can contain many different book genres and subgenres within the pages.",
+    "examples": "Charlie and the Chocolate Factory by Roald Dahl and Winnie-The-Pooh by A.A. Milne."
+   },
+   {
+    "name": "Classic fiction",
+    "description": "Classics are fictional books that have stood the test of time and are considered exceptional works of literature. Classic fiction is often used in academic discussions.",
+    "examples": "Pride and Prejudice by Jane Austen and Little Women by Louisa May Alcott."
+   },
+   {
+    "name": "Colonization sci-fi",
+    "description": "Colonization science fiction books focus on colonizing a new planet or settlement after the Earth has been destroyed.",
+    "examples": "Red Mars by Kim Stanley Robinson and The Word for World Is Forest by Ursula K. Le Guin"
+   },
+   {
+    "name": "Comedy horror",
+    "description": "Comedy horror books are one of the more interesting (and contradictory) on the list of book genres. They are just as likely to make you laugh as they are to make you scream. They are often referred to as “black comedies,” and rely heavily on the unexpected.",
+    "examples": "Horrorstör by Grady Hendrix and Man, F*ck This House by Brian Asman."
+   },
+   {
+    "name": "Coming-of-Age",
+    "description": "Coming-of-age stories depict the personal growth and development of characters as they navigate the challenges of adolescence.",
+    "examples": "\"The Catcher in the Rye\" by J.D. Salinger, \"To Kill a Mockingbird\" by Harper Lee, \"The Perks of Being a Wallflower\" by Stephen Chbosky"
+   },
+   {
+    "name": "Conspiracy thriller",
+    "description": "In conspiracy thrillers, the protagonist is up against a powerful organization after discovering a conspiracy that puts their life at risk.",
+    "examples": "Deception Point by Dan Brown and Private Moscow by James Patterson."
+   },
+   {
+    "name": "Contemporary fiction",
+    "description": "Contemporary fiction stories are set in modern times and don’t contain any elements of fantasy (see below). These stories give the reader a window into a specific human experience. Some may be written for entertainment, and others may be written as political or social statements.",
+    "examples": "A Man Called Ove by Fredrik Backman and Where the Crawdads Sing by Delia Owens."
+   },
+   {
+    "name": "Contemporary romance",
+    "description": "Contemporary romance books take place in modern day and feature more relatable and realistic situations.",
+    "examples": "Beach Read by Emily Henry and The Love Hypothesis by Ali Hazelwood."
+   },
+   {
+    "name": "Cozy mystery",
+    "description": "Cozy mysteries are not grim or gruesome. They are light-hearted, and usually set in small towns where a crime is solved by an amateur detective – often a woman.",
+    "examples": "A Deadly Inside Scoop by Abby Collette and Finlay Donovan Is Killing It by Elle Cosimano."
+   },
+   {
+    "name": "Crime",
+    "description": "Crime novels revolve around the commission and investigation of criminal activities, often featuring detectives or law enforcement.",
+    "examples": "\"The Girl with the Dragon Tattoo\" by Stieg Larsson, \"Gone Girl\" by Gillian Flynn, \"The Silence of the Lambs\" by Thomas Harris"
+   },
+   {
+    "name": "Dark fantasy",
+    "description": "Dark fantasy books are written in a tone that evokes a feeling of dread. They feature morally gray characters and often include elements of horror. Sometimes the story is told from a villain or monster’s point of view. In dark fantasy, the events that might shock in an actual horror book are portrayed as normal.",
+    "examples": "The Dark Tower series by Stephen King and American Gods by Neil Gaiman."
+   },
+   {
+    "name": "Dark romance",
+    "description": "Dark romance is one of the most intense items on our list of book genres. It contains morally-gray characters and very mature content. These stories often come with trigger warnings, and center around plots of trauma and violence such as stalking, kidnapping, sex trafficking, or the mafia.",
+    "examples": "Asking for It by Lilah Pace and Haunting Adeline by H.D. Carlton."
+   },
+   {
+    "name": "Disaster thriller",
+    "description": "Disaster thrillers are written about natural or man-made disasters, such as volcanoes, tsunamis, or nuclear attacks.",
+    "examples": "One Second After by William R. Forstchen and Ashfall by Mike Mullin."
+   },
+   {
+    "name": "Dystopian",
+    "description": "Dystopian fiction portrays societies characterized by oppressive governments, societal collapse, or other nightmarish conditions.",
+    "examples": "\"1984\" by George Orwell, \"The Hunger Games\" by Suzanne Collins, \"Brave New World\" by Aldous Huxley"
+   },
+   {
+    "name": "Erotic romance",
+    "description": "Erotic romance books focus on the buildup of sexual interactions and explicit sex scenes between characters.",
+    "examples": "Fifty Shades of Grey by E.L. James and Bared to You by Sylvia Day."
+   },
+   {
+    "name": "Espionage thriller",
+    "description": "Espionage thrillers feature spies or secret agents as the protagonists. They usually need to infiltrate a foreign government or crime ring.",
+    "examples": "Tinker Tailor Soldier Spy by John le Carre and the Jason Bourne series by Robert Ludlum."
+   },
+   {
+    "name": "Fables",
+    "description": "Fables are short stories, often with moral lessons, featuring animals or mythical creatures as characters.",
+    "examples": "\"Aesop's Fables\" by Aesop, \"The Little Prince\" by Antoine de Saint-Exupéry, \"Animal Farm\" by George Orwell"
+   },
+   {
+    "name": "Fairy tales",
+    "description": "No list of book genres would be complete without fairy tales. The stories of Hans Christian Anderson and the Grimm Brothers are what we most associate with “classic” fairy tales. They rely on themes of good vs. evil, contain a moral lesson (often for children), and usually end with a “happily ever after.”",
+    "examples": "Ella Enchanted by Gail Carson Levine and The Lunar Chronicles series by Marissa Meyer."
+   },
+   {
+    "name": "Family Drama",
+    "description": "Family drama explores interpersonal relationships within families, delving into conflicts, secrets, and emotional dynamics.",
+    "examples": "\"Little Fires Everywhere\" by Celeste Ng, \"The Glass Castle\" by Jeanette Walls, \"The Corrections\" by Jonathan Franzen"
+   },
+   {
+    "name": "Fantasy",
+    "description": "Fantasy is undoubtedly one of the most popular genres in our list of book genres. Books in the fantasy genre include supernatural or magical elements. These can be set on Earth, or in completely made-up worlds. A fantasy book series is not bound by the laws of science, physics, or even reality.",
+    "examples": "XXX"
+   },
+   {
+    "name": "Fantasy romance (Romantasy)",
+    "description": "Like others on this list of book genres, fantasy romance books mix (you guessed it) two genres. In this example, it’s fantasy and romance. They follow a typical romance book formula but are set in fantasy worlds.",
+    "examples": "Fourth Wing by Rebecca Yarros and A Court of Thorns and Roses by Sarah J. Maas"
+   },
+   {
+    "name": "Folktales",
+    "description": "A folktale is a story or legend that originated in a particular region or group of people and was passed down through generations. Most folktales are hundreds of years old, but modern fantasy writers often take inspiration from these tales.",
+    "examples": "Momotaro and Arabian Nights."
+   },
+   {
+    "name": "Forensic thriller",
+    "description": "Forensic thrillers rely on finding evidence such as DNA or fingerprints to catch the perpetrator.",
+    "examples": "The Bone Collector by Jeffery Deaver and the Kay Scarpetta series by Patricia Cornwell."
+   },
+   {
+    "name": "Gothic horror",
+    "description": "Gothic horror features a battle between humanity and unnatural evil forces. The overall feel of gothic books is quite bleak and gloomy, and they are often set in castles or old manor houses. There is often a descent into madness involved.",
+    "examples": "The Picture of Dorian Gray by Oscar Wilde and Dracula by Bram Stoker."
+   },
+   {
+    "name": "Gothic romance",
+    "description": "Gothic romance novels are dark and gloomy and focus on the hurdles women face to be with the person they love. There are often secrets and mysteries involved, and they are usually set in old manor houses.",
+    "examples": "Shadows of Swanford Abbey by Julie Klassen and Within These Wicked Walls by Lauren Blackwood."
+   },
+   {
+    "name": "Graphic novel",
+    "description": "Graphic novels are works that are highly illustrated, with a series of comic panels and speech bubbles to tell the story. Graphic novels aren’t limited in terms of scope and can be used to cover many different book genres in our list of genres. You will find lots of fantasy and sci-fi graphic novels, but also nonfiction, historical fiction, and classics!",
+    "examples": "Persepolis by Marjane Satrapi and Watchmen by Alan Moore."
+   },
+   {
+    "name": "Gumshoe/Detective mystery",
+    "description": "Detective mysteries don’t have direct police tie-ins, and the mystery is solved directly by a professional or amateur detective.",
+    "examples": "The Terry Orr series by Jim Fusilli and the Temperance Brennan series by Kathy Reichs."
+   },
+   {
+    "name": "Hard sci-fi",
+    "description": "Hard science fiction books place a heavy emphasis on math, physics, chemistry, engineering, or other sciences. They have realistic science based on currently proven facts.",
+    "examples": "The Martian by Andy Weir and The Three-Body Problem by Liu Cixin."
+   },
+   {
+    "name": "Heroic fantasy",
+    "description": "Heroic fantasy centers around a “hero” on a quest, and relies heavily on themes of good vs. evil.",
+    "examples": "The Kingkiller Chronicle series by Patrick Rothfuss and The Hobbit by J.R.R. Tolkien."
+   },
+   {
+    "name": "High fantasy",
+    "description": "There is often confusion between high fantasy vs. low fantasy. The easiest way to distinguish the two is that high fantasy is set in an alternate or secondary world. There is often a quest involved, as well as high stakes like preventing the end of the world or conquering an evil overlord. High fantasy books tend to have lots of characters and a high page count – and are therefore sometimes called “epic fantasy” books.",
+    "examples": "A Song of Ice and Fire series by George R.R. Martin and the Lord of the Rings series by J.R.R. Tolkien."
+   },
+   {
+    "name": "Historical fantasy",
+    "description": "Historical fantasy stories are set in during an easily recognizable historical period – but with magic added in.",
+    "examples": "Babel by R.F. Kuang and Gods of Jade and Shadow by Silvia Moreno-Garcia."
+   },
+   {
+    "name": "Historical fiction",
+    "description": "Next on our list of book genres is historical fiction. These are fiction books that are inspired by real events in history but are not factual retellings. They allow readers to be transported into the past through the eyes of one or more characters.",
+    "examples": "The Nightingale by Kristin Hannah and Pachinko by Min Jin Lee."
+   },
+   {
+    "name": "Historical mystery",
+    "description": "Many items in this list of book genres are crossovers between two different book genres. Historical mysteries are fictional mysteries set in a historic time period.",
+    "examples": "Clark and Division by Naomi Hirahara and Dead Dead Girls by Nekesa Afia."
+   },
+   {
+    "name": "Historical romance",
+    "description": "Historical romance stories are romance books set in a specific historic era.",
+    "examples": "Devil in Winter by Lisa Kleypas and the Outlander series by Diana Gabaldon."
+   },
+   {
+    "name": "Historical thriller",
+    "description": "Historical thrillers are thrillers set in a specific time period. They often include real historical events and conspiracies.",
+    "examples": "The Devils of Cardona by Matthew Carr and The Sympathizer by Viet Thanh Nguyen."
+   },
+   {
+    "name": "Horror",
+    "description": "Every list of book genres needs a little horror in the mix! Horror is an increasingly popular book genre, with many subgenres nested under it. Horror stories are fictional works meant to disturb or frighten.",
+    "examples": "XXX"
+   },
+   {
+    "name": "Howdunnits",
+    "description": "Unlike the other mystery types on our list of book genres, Howdunit mysteries are not about finding the perpetrator. In fact, they usually tell you who committed the crime straight away – and then focus on answering HOW the crime was committed.",
+    "examples": "A Kiss Before Dying by Ira Levin and The Demolished Man by Alfred Bester."
+   },
+   {
+    "name": "Legal thriller",
+    "description": "Legal thrillers center around court and legal dilemmas. The protagonist can be a lawyer or someone wrongfully accused.",
+    "examples": "The Lincoln Lawyer by Michael Connelly and A Time to Kill by John Grisham."
+   },
+   {
+    "name": "LGBTQ+",
+    "description": "Any fiction book that places LGBTQ+ characters at the forefront is considered LGBTQ+ fiction. It can otherwise fall into a number of genres on this master list of book genres.",
+    "examples": "Red, White & Royal Blue by Casey McQuiston and The Color Purple by Alice Walker."
+   },
+   {
+    "name": "Literary fiction",
+    "description": "Literary fiction is fiction writing that is considered highly valuable and artistic. These books often cover serious topics that make the reader stop and think. They can blend with many genres in this list of book genres.",
+    "examples": "The Alchemist by Paulo Coelho and Tomorrow, and Tomorrow, and Tomorrow by Gabrielle Zevin."
+   },
+   {
+    "name": "Locked room mystery",
+    "description": "Next on the ultimate book genres list are locked room mystery books. These books cover “impossible” crimes – such as a murder committed in a windowless room that was locked from the inside. OR – they feature a small group of characters stuck together in a confined space.",
+    "examples": "Malice by Keigo Higashino and One of Us is Lying by Karen M. McManus."
+   },
+   {
+    "name": "Lovecraftian/Cosmic horror",
+    "description": "Lovecraftian horror, also known as “cosmic horror” was popularized by the author H.P. Lovecraft (Imagine inventing your own category in the long list of book genres!). Lovecraftian novels assume that there are otherworldly forces that once ruled the Earth and are here again to destroy us. It relies on the dread that things are outside of your control.",
+    "examples": "The Call of Cthulhu and Other Weird Stories by H.P. Lovecraft and The Croning by Laird Barron."
+   },
+   {
+    "name": "Low fantasy",
+    "description": "Low fantasy is a fantasy story that is set on Earth, where magic interacts with humans. It often has a more intimate and personal story arc than high fantasy stories.",
+    "examples": "The Indian in the Cupboard by Lynne Reid Banks and the Harry Potter series by J.K. Rowling."
+   },
+   {
+    "name": "Magical realism",
+    "description": "Some consider magical realism to be its own genre, and others a subgenre of fantasy. This genre doesn’t contain magical creatures, but instead focuses on magical things that happen in our world. There is a general underpinning of magic that is often portrayed as commonplace.",
+    "examples": "One Hundred Years of Solitude by Gabriel García Márquez and Like Water for Chocolate by Laura Esquivel."
+   },
+   {
+    "name": "Military sci-fi",
+    "description": "Military science fiction books focus on a battle between two groups. This may be on Earth, in space, or between multiple planets.",
+    "examples": "Iron Widow by Xiran Jay Zhao and Ender’s Game by Orson Scott Card."
+   },
+   {
+    "name": "Mind uploading sci-fi",
+    "description": "Mind uploading sci-fi focused on the concept that your consciousness can be uploaded or downloaded into another body or computer. This could be through alien intervention, complete brain transplants, or technology.",
+    "examples": "Altered Carbon by Richard K. Morgan and Six Wakes by Mur Lafferty."
+   },
+   {
+    "name": "Mystery",
+    "description": "One of the most fun genres in our master list of book genres is mystery. Mystery books contain an event (often a murder or a crime) that remains a mystery until the end of the book. These page-turners keep you guessing and often feature big plot twists.",
+    "examples": "XXX"
+   },
+   {
+    "name": "Mythic fantasy",
+    "description": "Mythic fantasy centers around mythology, most often Greek or Roman mythology. The story may focus on the gods themselves, on their descendants, or on humans who interact with the gods.",
+    "examples": "Circe by Madeline Miller and Percy Jackson & The Olympians by Rick Riordan."
+   },
+   {
+    "name": "New adult",
+    "description": "New adult books are a newly developing genre of fiction with protagonists in the 18–29 age range. New adult fiction includes more adult themes and graphic sex scenes than young adult books but still focuses on story arcs about coming-of-age of finding identity.",
+    "examples": "Beautiful Disaster by Jamie McGuire and The Deal by Elle Kennedy."
+   },
+   {
+    "name": "Noir",
+    "description": "Noir books, like film noir, involve classic morally-compromised detectives in trench coats solving crimes. Noir stories are usually set in gritty cities and have a dark or bleak atmosphere.",
+    "examples": "The Maltese Falcon by Dashiell Hammett and Queenpin by Megan Abbott."
+   },
+   {
+    "name": "Neo Noir",
+    "description": "Neo-noir in literature refers to works that evoke the themes and atmosphere of classic noir but are created in a contemporary context.",
+    "examples": "Works by James Ellroy, Elmore Leonard, and Dennis Lehane."
+   },
+   {
+    "name": "Parallel world sci-fi",
+    "description": "Parallel world science fiction deals with alternate realities. Characters pass through multiple worlds very similar to their own with interesting consequences.",
+    "examples": "Dark Matter by Blake Crouch and the Firebird series by Claudia Gray."
+   },
+   {
+    "name": "Paranormal horror",
+    "description": "Paranormal horror includes supernatural themes such as hauntings, curses, and possessions.",
+    "examples": "The Haunting of Hill House by Shirley Jackson and The Exorcist by William Peter Blatty."
+   },
+   {
+    "name": "Paranormal romance",
+    "description": "Paranormal romance books usually feature romantic partners that are supernatural – such as vampires or werewolves.",
+    "examples": "The Twilight series by Stephanie Meyer and the Anita Blake: Vampire Hunter series by Laurell K. Hamilton."
+   },
+   {
+    "name": "Paranormal thriller",
+    "description": "Paranormal thrillers add paranormal or supernatural elements to a typical thriller plot.",
+    "examples": "The Outsider by Stephen King and Hidden Pictures by Jason Rekulak."
+   },
+   {
+    "name": "Post-apocalyptic horror",
+    "description": "Post-apocalyptic horror is set after our civilization has collapsed. It examines how we survive amidst zombies, plagues, climate change, or whatever disaster wiped humanity out.",
+    "examples": "The Stand by Stephen King and I Am Legend by Richard Matheson"
+   },
+   {
+    "name": "Procedural/Hard-boiled mystery",
+    "description": "Hard-boiled mysteries are more hardcore than other mystery types on our list of book genres. They include more violent, sex, and graphic details, and often include forensic science and autopsy reports – closely following an actual police procedure.",
+    "examples": "The Big Sleep by Raymond Chandler and I, the Jury by Mickey Spillane."
+   },
+   {
+    "name": "Psychological horror",
+    "description": "Psychological horror plays with your mind and twists your thoughts. There doesn’t need to be any monster for the fear to work its magic. Psychological books play with paranoia and self-doubt.",
+    "examples": "Silence of the Lambs by Thomas Harris and House of Leaves by Mark Z. Danielewski."
+   },
+   {
+    "name": "Psychological thriller",
+    "description": "Psychological thrillers are one of the most popular types of thriller on our list of book genres. These thrillers put the protagonist’s sanity at risk along with their physical safety. Because the protagonists are unstable, they are often unreliable narrators.",
+    "examples": "The Silent Patient by Alex Michaelides and The Woman in the Window by A. J. Finn."
+   },
+   {
+    "name": "Quiet horror",
+    "description": "Quiet horror or “soft horror” leaves out the graphic scenes of some of the other horror types on our list of book genres. Instead of graphic violence, it relies on the atmosphere and mood to completely creep you out.",
+    "examples": "December Park by Ronald Malfi and The Woman in Black by Susan Hill."
+   },
+   {
+    "name": "Regency",
+    "description": "Regency romance novels are typically set during the Regency Era in England (1795–1837) and focus on the societal norms of that time. Think balls, walks on the promenade, and marriages with much ado.",
+    "examples": "The Bridgertons series by Julia Quinn and Arabella by Georgette Heyer."
+   },
+   {
+    "name": "Religious thriller",
+    "description": "Religious thrillers are written about religious secrets or stolen religious artifacts. There may be dangerous cults involved.",
+    "examples": "The Templar Legacy by Steve Berry and The Da Vinci Code by Dan Brown."
+   },
+   {
+    "name": "Romance",
+    "description": "Nothing on our list of book genres is read as voraciously as romance novels. Romance books turn some real profit for authors and center around would-be lovers and the obstacles they face in getting together.",
+    "examples": "Some subgenres of romance include:"
+   },
+   {
+    "name": "Romantic comedy",
+    "description": "Romantic comedy books are precisely how they sound – romance books with ridiculous events and obstacles that will make you laugh out loud.",
+    "examples": "Nine Rules To Break When Romancing A Rake by Sarah MacLean and Shortcake by Lucy Watson."
+   },
+   {
+    "name": "Romantic suspense",
+    "description": "Romantic suspense novels are closely tied with gothic romance – which is where they first originated. You can think of romantic suspense novels as being about 50% romance and 50% suspense/mystery.",
+    "examples": "Verity by Colleen Hoover and The Witness by Nora Roberts."
+   },
+   {
+    "name": "Satire",
+    "description": "Satire books use humor and irony to poke fun at (or discredit) politics, systems of government, or societal norms.",
+    "examples": "Catch-22 by Joseph Heller and Animal Farm by George Orwell."
+   },
+   {
+    "name": "Sci-fi romance",
+    "description": "Sci-fi romance is a romance story with a science fiction setting or plot line. This could revolve around space travel, time travel, or any other sci-fi theme (see below).",
+    "examples": "The Time Traveler’s Wife by Audrey Niffenegger and The Darkness Outside Us by Eliot Schrefer."
+   },
+   {
+    "name": "Science fiction",
+    "description": "On our list of book genres, science fiction is most closely related to fantasy, with made-up worlds and species. But where science fiction and fantasy differ is that science and technology are at the root of science fiction stories. They still follow the laws of physics and possibility – not magic.",
+    "examples": "Here are some of the subgenres of science fiction (also known as “sci-fi”):"
+   },
+   {
+    "name": "Short story",
+    "description": "Next on our list of book genres is short stories. Short stories are stories that are anywhere from 1,000 – 15,000 words in length, and they can be a mix of any topics on our list of genres.",
+    "examples": "The Lottery by Shirley Jackson and How to Become a Writer by Lorrie Moore."
+   },
+   {
+    "name": "Slasher",
+    "description": "Slasher books contain sociopathic villains who are trying to kill the protagonists. They feature a lot of violence and suspense.",
+    "examples": "Psycho by Robert Bloch and The Girl Next Door by Jack Ketchum."
+   },
+   {
+    "name": "Soft sci-fi",
+    "description": "While hard sci-fi focuses on the sciences and the “how” behind sci-fi plots, soft sci-fi focuses more on the human element. Soft sci-fi books examine politics, social constructs, and relationships amid a sci-fi backdrop.",
+    "examples": "1984 by George Orwell and The Giver by Lois Lowry."
+   },
+   {
+    "name": "Space opera",
+    "description": "Space operas are action books that are set in outer space. They often are long-running epic series.",
+    "examples": "The Dune Chronicles by Frank Herbert and The Murderbot Diaries by Martha Wells."
+   },
+   {
+    "name": "Space western",
+    "description": "Take a western book and put it in outer space, and you have a space western. Thinks lawless frontiers, morally-gray characters, and lots of shoot-outs.",
+    "examples": "The Long Way to a Small Angry Planet by Becky Chambers and Persephone Station by Stina Leicht."
+   },
+   {
+    "name": "Steampunk",
+    "description": "Steampunk books are a mix of the past and future. They feature steam-powered technology and 19th- and 20th-century aesthetics combined with futuristic elements.",
+    "examples": "Leviathan by Scott Westerfeld and Soulless by Gail Carriger."
+   },
+   {
+    "name": "Supernatural mystery",
+    "description": "Supernatural mysteries combine elements of two other items on our book genres list: horror and fantasy. They involve mysteries that appear to include supernatural elements (which may or may not be explained with non-supernatural solutions).",
+    "examples": "The Enigma of Room 622 by Joël Dicker and The Pale Horse by Agatha Christie."
+   },
+   {
+    "name": "Suspense",
+    "description": "Suspense novels keep readers on the edge of their seats, often involving tension, uncertainty, and anticipation.",
+    "examples": "\"Gone Girl\" by Gillian Flynn, \"The Da Vinci Code\" by Dan Brown, \"The Girl on the Train\" by Paula Hawkins"
+   },
+   {
+    "name": "Thriller",
+    "description": "A thriller often shares many attributes of mystery novels, but not all mysteries are thrillers, and not all thrillers are mysteries. So what differentiates these two items on our list of book genres? Thrillers are meant to evoke anxiety and tension and are first and foremost about the protagonist trying to save or protect themselves. Some subgenres of thriller fiction include:",
+    "examples": "XXX"
+   },
+   {
+    "name": "Time Travel",
+    "description": "Time travel stories involve characters moving between different points in time, exploring the consequences of altering history.",
+    "examples": "\"Outlander\" by Diana Gabaldon, \"The Time Traveler's Wife\" by Audrey Niffenegger, \"11/22/63\" by Stephen King"
+   },
+   {
+    "name": "Urban fantasy",
+    "description": "Urban fantasy is a fantasy book set in a city. These stories are usually set in the real world (low fantasy) and are about the relations between humans and supernatural beings.",
+    "examples": "The Kate Daniels series by Ilona Andrews and The Mortal Instruments series by Cassandra Clare."
+   },
+   {
+    "name": "Western",
+    "description": "A classic American genre on our list of book genres is Western fiction. These books take place in the American Old West and feature plots with cattle ranches, bounty hunters, and shootouts.",
+    "examples": "Lonesome Dove by Larry McMurtry and Blood Meridian by Cormac McCarthy."
+   },
+   {
+    "name": "Women’s fiction",
+    "description": "Women’s fiction can cover a variety of topics on our list of book genres and refers to any book written about the female experience or the role of women in society.",
+    "examples": "The Five-Star Weekend by Elin Hilderbrand and Lessons in Chemistry by Bonnie Garmus."
+   },
+   {
+    "name": "Young adult",
+    "description": "Like women’s fiction, young adult fiction can cover most topics on our list of book genres, but they are written for and about young adults, typically between ages 13-17. These books often cover coming-of-age story arcs and the trials of adolescence.",
+    "examples": "A Wrinkle in Time by Madeleine L'Engle and A Series of Unfortunate Events by Lemony Snicket."
+   }
+  ]
+ },
+ "nonfiction": {
+  "label": "Non-fiction genres",
+  "items": [
+   {
+    "name": "Art & photography",
+    "description": "While all the topics leading up to this point were fiction, the rest of the items on our list of book genres are nonfiction topics. These are factual books about real life. The first nonfiction topic on our list of book genres is art and photography. Art and photography books can be written about art, or be more visual books that showcase art and photography. These make great coffee table books.",
+    "examples": "Humans of New York by Brandon Stanton and Art: The Definitive Visual Guide by Andrew Graham Dixon."
+   },
+   {
+    "name": "Autobiography/Memoir",
+    "description": "Memoirs and autobiographies are written by the author about their own life. They focus on the author’s life trials and accomplishments.",
+    "examples": "Becoming by Michelle Obama and I Know Why The Caged Bird Sings by Maya Angelou."
+   },
+   {
+    "name": "Biography",
+    "description": "Biographies are books written about an important or interesting person, usually after they have died, and often cover the entire span of the person’s life.",
+    "examples": "A Beautiful Mind by Sylvia Nasar and Prince: A Private View by Afshin Shahidi."
+   },
+   {
+    "name": "Business & Economics",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Cookbooks",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Crafts & Hobbies",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Education & Teaching",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Environment & Nature",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Essays",
+    "description": "An essay is a short piece of writing where the author gives their thoughts (and often an argument) on a specific topic. They may be reflections and observations of the author, or a political statement.",
+    "examples": "Notes of a Native Son by James Baldwin and Once More to the Lake by E. B. White."
+   },
+   {
+    "name": "Food & drink",
+    "description": "Next on our list of book genres are cookbooks! Cookbooks can be simple collections of recipes, or contain information about the chef’s life or home country. They can cover food, beverages, or both.",
+    "examples": "Half-Baked Harvest by Tieghan Gerard and The Ultimate Bar Book by Mittie Hellmich."
+   },
+   {
+    "name": "Health & Fitness",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "History",
+    "description": "Historical nonfiction is a well-researched, factual accounting of a historical event or time period.",
+    "examples": "The Lessons of History by Will & Ariel Durant and The Dawn of Everything by David Graeber & David Wengrow."
+   },
+   {
+    "name": "Home & Garden",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "How-To/Guides",
+    "description": "How-to books teach the reader how to get better at a craft, skill, or hobby, or give them an overview of all the information they need to know on a specific topic.",
+    "examples": "The Essential Guide to Freelance Writing by Zachary Petit and How to Read Tarot by Jessica Wiggan."
+   },
+   {
+    "name": "Humanities & social sciences",
+    "description": "The next item on our list of book genres covers a number of topics. Books in the humanities study human society and relationships – and can include anthropology, sociology, politics, and many other subjects.",
+    "examples": "Attached by Amir Levine and Rachel Heller and Sapiens by Yuval Noah Harari."
+   },
+   {
+    "name": "Humor",
+    "description": "Humor books are written with one goal in mind – to make the reader laugh! They are often satirical essays or memoirs.",
+    "examples": "Bossypants by Tina Fey and Is Everyone Hanging Out Without Me? by Mindy Kaling."
+   },
+   {
+    "name": "Journalism",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Language & Linguistics",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Law & Legal",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Literary Criticism",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Mathematics",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Medicine & Nursing",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Music",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Parenting",
+    "description": "Parenting books teach parents how to raise their children – including how to prepare for their arrival!",
+    "examples": "Raising Good Humans by Hunter Clarke-Fields and The Whole-Brain Child by Daniel J. Siegel."
+   },
+   {
+    "name": "Performing Arts",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Philosophy",
+    "description": "Philosophy nonfiction explores ethics, moral dilemmas, and the purpose of life on earth.",
+    "examples": "Meditations by Marcus Aurelius and Man’s Search for Meaning by Viktor Frankl."
+   },
+   {
+    "name": "Politics & Current Affairs",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Psychology",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Reference",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Religion & spirituality",
+    "description": "Books on religion and spirituality cover a range of topics, from actual religious texts like the Bible and the Quran to books on spiritual philosophies, mindfulness, and energy healing.",
+    "examples": "The Untethered Soul by Michael Alan Singer and Mere Christianity by C.S. Lewis."
+   },
+   {
+    "name": "Science & technology",
+    "description": "Science and technology books are written about the sciences – either to help readers have a greater understanding of them or to teach about the evolution of technology.",
+    "examples": "The Joy of Science by Jim Al-Khalili and A Brief History of Time by Stephen Hawking."
+   },
+   {
+    "name": "Self-help",
+    "description": "One of the most popular nonfiction genres on our list of book genres is self-help. Self-help books cover topics from finances to organization to mental health and help readers improve themselves in some way.",
+    "examples": "Atomic Habits by James Clear and The Four Agreements by Don Miguel Ruiz."
+   },
+   {
+    "name": "Social Issues",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Sports & Recreation",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Technology & Engineering",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Textbooks & Educational Materials",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Travel",
+    "description": "Undoubtedly one of the most fun nonfiction topics on our list of genres is travel. Travel books can be travel guides to various countries or memoirs of the author’s own travels.",
+    "examples": "Eat, Pray, Love by Elizabeth Gilhart and Down Under by Bill Bryson."
+   },
+   {
+    "name": "True crime",
+    "description": "The last item on our master list of book genres is true crime. True crime books describe actual crimes from start to finish.",
+    "examples": "In Cold Blood by Truman Capote and I’ll Be Gone in the Dark by Michelle McNamara."
+   },
+   {
+    "name": "Women's Studies",
+    "description": "XXX",
+    "examples": "XXX"
+   },
+   {
+    "name": "Writing & Publishing",
+    "description": "XXX",
+    "examples": "XXX"
+   }
+  ]
+ }
+}

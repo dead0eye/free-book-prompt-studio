@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Prompt Studio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f5fd0'/%3E%3Cpath d='M9 8h9a5 5 0 0 1 0 10H9zM9 18h10a5 5 0 0 1 0 10H9z' fill='none' stroke='white' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="description" content="A planning tool and prompt generator for writers. 1,300+ curated options across 30 vocabularies and 131 genres, turned into a book brief, craft questions, a beat sheet and exercises — or an AI prompt if you want one.">
+<style>
+:root{
+  --bg:#f7f8fa; --panel:#fff; --line:#e3e7ec; --line-soft:#f1f4f7;
+  --ink:#141b25; --ink-soft:#4f5b6b; --ink-faint:#8d99a8;
+  --accent:#2f5fd0; --accent-soft:#eef3fd; --ok:#1a7f5a; --warn:#a9600d;
+  --ui:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Consolas,monospace;
+  --r:9px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--ui);font-size:14px;line-height:1.55;color:var(--ink);background:var(--bg)}
+a{color:var(--accent)}
+
+header{background:var(--panel);border-bottom:1px solid var(--line);padding:12px 22px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:30}
+header h1{font-size:16px;font-weight:700;letter-spacing:-.2px}
+header .sub{font-size:12px;color:var(--ink-faint)}
+header .grow{flex:1}
+
+.tabs{display:flex;gap:4px;background:var(--line-soft);padding:3px;border-radius:var(--r)}
+.tabs button{border:0;background:transparent;font:600 12.5px var(--ui);color:var(--ink-soft);
+  padding:6px 13px;border-radius:6px;cursor:pointer}
+.tabs button.on{background:var(--panel);color:var(--ink);box-shadow:0 1px 2px rgba(20,27,37,.08)}
+
+button.b{font:600 12.5px var(--ui);border:1px solid var(--line);background:var(--panel);
+  color:var(--ink);border-radius:7px;padding:6px 11px;cursor:pointer}
+button.b:hover{background:#fbfcfd}
+button.b.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+button.b.pri:hover{background:#2450b8}
+button.b.sm{padding:3px 9px;font-size:11px;font-weight:600}
+
+/* Drop-down menus, so the header does not turn into a wall of nine buttons. */
+details.menu{position:relative}
+details.menu>summary{list-style:none;cursor:pointer;font:600 12.5px var(--ui);
+  border:1px solid var(--line);background:var(--panel);border-radius:7px;padding:6px 11px}
+details.menu>summary::-webkit-details-marker{display:none}
+details.menu[open]>summary{background:var(--accent-soft);border-color:var(--accent)}
+details.menu>summary.sm{padding:3px 9px;font-size:11px}
+details.menu .pop{position:absolute;right:0;top:calc(100% + 5px);background:var(--panel);
+  border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px rgba(20,27,37,.13);
+  padding:8px;min-width:250px;z-index:40}
+details.menu .pop button:not(.b),details.menu .pop a{display:block;width:100%;text-align:left;
+  border:0;background:transparent;font:13px var(--ui);color:var(--ink);padding:7px 9px;
+  border-radius:6px;cursor:pointer;text-decoration:none}
+details.menu .pop button:not(.b):hover,details.menu .pop a:hover{background:var(--accent-soft)}
+details.menu .pop hr{border:0;border-top:1px solid var(--line-soft);margin:6px 2px}
+details.menu .pop .lab{font-size:10.5px;font-weight:700;letter-spacing:.8px;
+  text-transform:uppercase;color:var(--ink-faint);padding:6px 9px 3px}
+details.menu .pop .note{font-size:11.5px;color:var(--ink-faint);padding:4px 9px 6px;
+  line-height:1.45}
+details.menu .pop select{width:100%;padding:6px 8px;border:1px solid var(--line);
+  border-radius:6px;font:13px var(--ui);margin:2px 0 6px}
+
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;
+  padding:20px 22px 60px;max-width:1560px;margin:0 auto;align-items:start}
+@media (max-width:1080px){.wrap{grid-template-columns:1fr}}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card>h2{font-size:11px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;
+  color:var(--ink-faint);padding:12px 16px;border-bottom:1px solid var(--line-soft);
+  display:flex;align-items:center;gap:8px}
+.card>h2 .n{font-family:var(--mono);font-size:10px;color:var(--ink-faint);font-weight:500}
+.card>h2 .grow{flex:1}
+.card .body{padding:14px 16px}
+.card+.card{margin-top:20px}
+
+.field{margin-bottom:13px}
+.field>label{display:flex;align-items:baseline;gap:7px;font-size:12px;font-weight:600;
+  color:var(--ink-soft);margin-bottom:4px}
+.field>label .cnt{font-family:var(--mono);font-size:10px;color:var(--ink-faint);font-weight:400}
+.field .ctl{display:flex;gap:6px;align-items:stretch}
+.field select,.field input[type=text],.field input[type=number],.field textarea{
+  flex:1;min-width:0;padding:7px 9px;border:1px solid var(--line);border-radius:7px;
+  font:13px var(--ui);color:var(--ink);background:var(--panel)}
+.field textarea{min-height:66px;resize:vertical;line-height:1.5}
+.field select:focus,.field input:focus,.field textarea:focus{
+  outline:2px solid var(--accent-soft);border-color:var(--accent)}
+.field .roll,.field .pin{flex:0 0 auto;width:32px;border:1px solid var(--line);
+  background:var(--panel);border-radius:7px;cursor:pointer;font-size:14px;line-height:1;
+  color:var(--ink-soft)}
+.field .roll:hover,.field .pin:hover{background:var(--accent-soft);border-color:var(--accent)}
+.field .pin.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.field.pinned>label{color:var(--accent)}
+.field .desc{font-size:11.5px;color:var(--ink-faint);margin-top:4px;line-height:1.45;
+  padding-left:2px}
+.field .desc:empty{display:none}
+
+.out{font-family:var(--mono);font-size:12px;line-height:1.65;white-space:pre-wrap;
+  word-break:break-word;background:#0f1720;color:#dfe7ef;padding:14px 15px;border-radius:9px;
+  max-height:340px;overflow:auto}
+.prompt{border-bottom:1px solid var(--line-soft);padding:14px 16px}
+.prompt:last-child{border-bottom:0}
+.prompt .head{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.prompt .head b{font-size:13px;font-weight:600}
+.prompt .head .grow{flex:1}
+.prompt .note{font-size:11.5px;color:var(--ink-faint);margin-bottom:9px}
+
+.pill{display:inline-block;font-family:var(--mono);font-size:10px;background:var(--line-soft);
+  color:var(--ink-soft);padding:2px 6px;border-radius:4px}
+button.pill{border:0;cursor:pointer;font-weight:600}
+button.pill:hover{background:var(--line);color:var(--ink)}
+button.pill:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.err{background:#fdf2f2;border:1px solid #f7c9c9;color:#9b1c1c;padding:14px 16px;
+  border-radius:9px;font-size:13px;line-height:1.6;margin:20px 22px}
+.err code{font-family:var(--mono);font-size:12px;background:#fff;padding:2px 5px;border-radius:4px}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);
+  color:#fff;font-size:12.5px;font-weight:600;padding:8px 15px;border-radius:8px;opacity:0;
+  transition:opacity .18s;pointer-events:none;z-index:60}
+.toast.on{opacity:1}
+
+details.gen{border:1px solid var(--line);border-radius:9px;margin-top:7px;overflow:hidden}
+details.gen>summary{cursor:pointer;padding:8px 11px;font-size:12.5px;font-weight:600;
+  background:var(--line-soft);list-style:none;display:flex;align-items:center;gap:8px}
+details.gen>summary::-webkit-details-marker{display:none}
+details.gen>summary::before{content:'\25B8';color:var(--ink-faint);font-size:10px}
+details.gen[open]>summary::before{content:'\25BE'}
+details.gen .genbody{padding:10px 12px;font-size:12px;color:var(--ink-soft);line-height:1.6}
+details.gen .genbody em{color:var(--ink-faint)}
+
+/* ── the output panel ─────────────────────────────────────────────────── */
+.sheettabs{display:flex;gap:3px;padding:9px 12px;border-bottom:1px solid var(--line-soft);
+  flex-wrap:wrap;background:var(--line-soft)}
+.sheettabs button{border:1px solid transparent;background:transparent;font:600 12px var(--ui);
+  color:var(--ink-soft);padding:5px 10px;border-radius:6px;cursor:pointer}
+.sheettabs button.on{background:var(--panel);color:var(--ink);border-color:var(--line)}
+.sheettabs button[disabled]{opacity:.38;cursor:default}
+.sheettabs .sep{width:1px;background:var(--line);margin:3px 6px}
+.sheetbar{display:flex;align-items:center;gap:8px;padding:10px 16px;
+  border-bottom:1px solid var(--line-soft)}
+.sheetbar .why{font-size:11.5px;color:var(--ink-faint);flex:1;line-height:1.45}
+
+.sheet{padding:20px 26px 30px;font-family:var(--serif);font-size:15px;line-height:1.6;
+  color:#1c2530}
+.sheet h1{font-size:24px;line-height:1.25;margin:0 0 4px;letter-spacing:-.3px}
+.sheet h2{font-size:16.5px;margin:26px 0 8px;padding-bottom:5px;
+  border-bottom:1px solid var(--line);font-weight:700}
+.sheet h3{font-size:14.5px;margin:18px 0 3px;font-weight:700}
+.sheet h4{font-size:13px;margin:14px 0 3px;font-weight:700}
+.sheet p{margin:0 0 9px}
+.sheet i,.sheet em{color:#5a6675}
+.sheet ul{margin:0 0 10px;padding-left:20px}
+.sheet li{margin-bottom:4px}
+.sheet li.chk{list-style:none;position:relative}
+.sheet li.chk::before{content:'';position:absolute;left:-18px;top:4px;width:11px;height:11px;
+  border:1.4px solid #98a3b2;border-radius:2px}
+.sheet hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.tablewrap{overflow-x:auto;margin:6px 0 14px;-webkit-overflow-scrolling:touch}
+.sheet table{border-collapse:collapse;width:100%;min-width:340px;
+  font-family:var(--ui);font-size:12.5px}
+.sheet th{text-align:left;font-weight:700;color:var(--ink-soft);
+  border-bottom:1.5px solid var(--line);padding:5px 9px 5px 0;font-size:11px;
+  text-transform:uppercase;letter-spacing:.6px}
+.sheet td{border-bottom:1px solid var(--line-soft);padding:6px 9px 6px 0;vertical-align:top}
+.sheet td:nth-child(3){color:var(--ink-soft)}
+.wline{border-bottom:1px solid #c9d2dc;height:15px;margin:2px 0 10px}
+
+/* Typed answers. These worksheets were print-and-write only; the ruled line is still what a
+   printed page shows, but on screen the same slot is a field you can work in. */
+.wfield{display:block;width:100%;box-sizing:border-box;margin:2px 0 12px;padding:7px 9px;
+  font-family:var(--serif);font-size:14.5px;line-height:1.55;color:var(--ink);
+  background:#fcfdfe;border:1px solid var(--line);border-radius:7px;resize:vertical;
+  overflow:hidden}
+.wfield:hover{border-color:#b9c4d1}
+.wfield:focus{outline:0;border-color:var(--accent,#3b6ea5);background:#fff;
+  box-shadow:0 0 0 3px rgba(59,110,165,.12)}
+.wfield::placeholder{color:var(--ink-faint)}
+.sheet li.chk-live{list-style:none;position:relative}
+.sheet li.chk-live::before{content:none}
+.sheet li.chk-live label{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.wchk{margin:3px 0 0;flex:0 0 auto;width:14px;height:14px;cursor:pointer}
+.wfield-frozen{display:none}
+.wfield-hidden{display:none !important}
+.sheet code{font-family:var(--mono);font-size:12px}
+.empty{padding:30px 26px;color:var(--ink-faint);font-size:13px;line-height:1.6}
+
+/* The whole pack as one document. Built only when asked for, shown only to the printer —
+   on screen it would just be the same six sheets a second time. */
+#printAll{display:none}
+.cover{text-align:center;padding:70px 26px 40px}
+.cover h1{font-size:30px;line-height:1.2;margin-bottom:10px}
+.cover .by{font-size:15px;color:var(--ink-soft);margin-bottom:34px}
+.cover .meta{font-size:12.5px;font-family:var(--ui);color:var(--ink-faint);line-height:1.7}
+.cover .contents{display:inline-block;text-align:left;margin:30px auto 0;font-size:14px}
+.cover .contents li{margin-bottom:5px}
+.cover .contents .of{color:var(--ink-faint);font-size:12.5px}
+
+/* Printing is the whole point of several of these sheets, so it is not an afterthought:
+   everything but the open worksheet goes, and the rules become something to write on. */
+@page{size:A4;margin:16mm 14mm}
+
+@media print{
+  header,.sheettabs,.sheetbar,.toast,#leftcol,.card>h2{display:none !important}
+  body{background:#fff;font-size:11pt}
+  .wrap{display:block;padding:0;max-width:none}
+  .card{border:0;border-radius:0}
+  .sheet{padding:0 6mm;font-size:11pt;color:#000}
+  .sheet h1{font-size:19pt}
+  .sheet h2{font-size:13.5pt;margin-top:20pt;page-break-after:avoid}
+  .sheet h3{font-size:12pt;page-break-after:avoid}
+  .wline{border-color:#000;height:20pt}
+  /* On paper a field is either what somebody typed, on a ruled line, or an empty ruled line to
+     write on. A rounded grey box with a focus ring is a screen artefact.
+     `overflow:visible` plus the JS-set height is what stops a long answer being clipped to its
+     first few lines - a textarea does not reflow across a page break on its own. */
+  .wfield{border:0;border-bottom:1px solid #000;border-radius:0;background:transparent;
+    padding:0 0 3pt;margin:2pt 0 12pt;font-size:11pt;color:#000;overflow:visible;
+    resize:none;box-shadow:none}
+  .wfield:focus{box-shadow:none;border-color:#000}
+  /* Nothing typed: collapse to the single ruled line this worksheet always printed, rather
+     than leaving a three-row gap with one rule stranded at the bottom of it.
+     `!important` because the auto-grow sets an inline height, and on paper an empty box has
+     no content to grow to. A background-image rule of ruled lines was the other option and is
+     a trap: Chrome leaves "Background graphics" off by default, so it would print nothing at
+     all for most people. */
+  .wfield.is-empty{height:20pt !important;padding:0;margin:2pt 0 12pt}
+  /* The plain-text stand-in a filled field is swapped for while printing. Unlike a textarea
+     this breaks across pages, which is the whole reason for the swap. */
+  .wfield-frozen{display:block;border-bottom:1px solid #000;padding:0 0 3pt;margin:2pt 0 12pt;
+    font-size:11pt;line-height:1.5;color:#000;white-space:pre-wrap}
+  .wfield-hidden{display:none !important}
+  .wchk{width:11px;height:11px}
+  .sheet li.chk-live{page-break-inside:avoid}
+  .sheet li.chk::before{border-color:#000}
+  .sheet table,.sheet tr{page-break-inside:avoid}
+  /* On paper there is no scrolling to do, and a scroll container can clip. */
+  .tablewrap{overflow:visible}
+  .sheet table{min-width:0}
+  .out{background:#fff;color:#000;border:1px solid #999;max-height:none}
+
+  /* Printing the whole pack: the open sheet steps aside, and each worksheet starts on a
+     fresh page so the thing you hand somebody has a shape. */
+  body.print-all #sheet{display:none !important}
+  body.print-all #printAll{display:block}
+  body.print-all .sheet{page-break-before:always}
+  body.print-all .cover{page-break-before:auto;padding:40mm 0 0;text-align:center}
+  .cover h1{font-size:26pt}
+  .cover .by{font-size:13pt}
+  .cover .meta,.cover .contents{color:#000}
+  /* Interface grey is too faint once it is ink on paper. */
+  .cover .contents .of,.sheet i,.sheet em{color:#444}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Book Prompt Studio</h1>
+    <div class="sub">Plan a book &mdash; <span id="stat"></span></div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <span class="grow"></span>
+  <button class="pill" id="seedPill" type="button"
+    title="Rolls are seeded. Click to type a seed and reproduce that roll exactly."></button>
+
+  <details class="menu">
+    <summary>Roll &#9662;</summary>
+    <div class="pop">
+      <button id="rollAll">Roll everything</button>
+      <button id="rollEmpty">Roll the empty fields only</button>
+      <div class="note">Pinned fields are never overwritten by either.</div>
+      <hr>
+      <button id="unpinAll">Unpin everything</button>
+      <button id="clearAll">Clear the whole form</button>
+    </div>
+  </details>
+
+  <details class="menu">
+    <summary>Project &#9662;</summary>
+    <div class="pop">
+      <div class="lab">Saved in this browser</div>
+      <select id="projSel"></select>
+      <button id="projSave">Save as a new project&hellip;</button>
+      <button id="projUpdate">Update the open project</button>
+      <button id="projDelete">Delete the open project</button>
+      <div class="note" id="projNote"></div>
+      <hr>
+      <div class="lab">Files on your computer</div>
+      <button id="saveFile">Download a .json backup</button>
+      <button id="loadFile">Open a .json backup</button>
+      <div class="note">A backup file is the only copy that survives clearing your browser
+        data, or moves to another machine.</div>
+    </div>
+  </details>
+
+  <button class="b pri" id="share">Copy link</button>
+</header>
+
+<div id="error"></div>
+
+<div class="wrap" id="wrap" hidden>
+  <div id="leftcol">
+    <section class="card">
+      <h2>Genre<span class="grow"></span><span class="n" id="genreCount"></span></h2>
+      <div class="body" id="genreBody"></div>
+    </section>
+
+    <section class="card">
+      <h2>Your book<span class="grow"></span></h2>
+      <div class="body" id="manualBody"></div>
+    </section>
+
+    <section class="card" id="storyCard">
+      <h2>Story<span class="grow"></span><span class="n" id="storyCount"></span></h2>
+      <div class="body" id="storyBody"></div>
+    </section>
+
+    <section class="card" id="charCard">
+      <h2>Characters<span class="grow"></span></h2>
+      <div class="body" id="charBody"></div>
+    </section>
+
+    <section class="card" id="childCard">
+      <h2>Children's book<span class="grow"></span></h2>
+      <div class="body" id="childBody"></div>
+    </section>
+
+    <section class="card" id="worldCard">
+      <h2>World<span class="grow"></span><span class="n" id="worldCount"></span></h2>
+      <div class="body" id="worldBody"></div>
+    </section>
+  </div>
+
+  <div>
+    <section class="card">
+      <div class="sheettabs" id="sheettabs"></div>
+      <div class="sheetbar">
+        <span class="why" id="sheetWhy"></span>
+        <button class="b sm" id="btnCopy">Copy</button>
+        <details class="menu">
+          <summary class="sm">Export &#9662;</summary>
+          <div class="pop">
+            <div class="lab">This sheet</div>
+            <button id="btnDownload">Download as Markdown</button>
+            <button id="btnPrint">Print or save as PDF</button>
+            <hr>
+            <div class="lab">Everything, as one document</div>
+            <button id="btnDownloadAll">Download the whole pack as Markdown</button>
+            <button id="btnPrintAll">Print or save the whole pack as PDF</button>
+            <div class="note">Every worksheet with something on it, in order, with a title
+              page. This is the one to hand to somebody else.</div>
+            <hr>
+            <div class="note"><b>For a PDF:</b> in the print dialog that opens, set the
+              destination or printer to <b>Save as PDF</b>. Nothing is uploaded — your browser
+              writes the file itself.</div>
+          </div>
+        </details>
+      </div>
+      <div id="sheet"></div>
+      <div id="printAll" aria-hidden="true"></div>
+    </section>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<input type="file" id="fileInput" accept=".json,application/json" hidden>
+
+<script src="writer.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

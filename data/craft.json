@@ -1,0 +1,740 @@
+{
+  "note": "Hand-maintained. This is what Writer mode is built on. Every choice a writer makes in this app is a decision they will have to live with for eighty thousand words, and a dropdown does not make them think about it. These are the questions that do. Keyed by field, and by specific option where a particular choice raises something a generic question would miss. Nothing here is generated from the spreadsheet - it is craft guidance, and it is written, not extracted.",
+  "version": "1.0.0",
+  "fields": {
+    "genre1": {
+      "heading": "Genre",
+      "questions": [
+        "Name three books in this genre you have actually finished. What did all three do in their first twenty pages?",
+        "What is the promise this genre makes to a reader who picks it up? Where in your book do you pay it?",
+        "Which convention of this genre are you keeping because it works, and which are you keeping only because you have not questioned it?"
+      ]
+    },
+    "genre2": {
+      "heading": "Genre blend",
+      "questions": [
+        "When the two genres pull in different directions, which one wins? Decide now, in writing, or every scene will re-litigate it.",
+        "A reader who came for the first genre and got the second - what do they feel? Is that the effect you want?"
+      ]
+    },
+    "nfGenre": {
+      "heading": "Category",
+      "questions": [
+        "Walk the shelf this book would sit on. Which three books are its nearest neighbours, and what does yours do that they do not?",
+        "What does a reader in this category already believe? Your book either confirms it or argues with it - which, and on what evidence?"
+      ]
+    },
+    "premise": {
+      "heading": "Premise",
+      "questions": [
+        "Say it in one sentence, out loud, to someone who is not a writer. Where did their attention drift?",
+        "What is at stake if the protagonist fails, and why can they not simply walk away?",
+        "Strip the setting and the genre out of the premise. Is there still a story left? If not, the premise is a costume, not a story."
+      ]
+    },
+    "targetAudience": {
+      "heading": "Reader",
+      "questions": [
+        "Picture one real person in this group. What are they doing in the hour before they pick your book up?",
+        "What does this reader already know that you can leave out, and what will you have to earn rather than assume?"
+      ]
+    },
+    "style": {
+      "heading": "Writing style",
+      "questions": [
+        "Copy out a paragraph by a writer who does this well. Now write one of your own beside it. What is different, and is the difference yours or is it a shortfall?",
+        "Where does this style get in the way? Find the scene it will handle worst and decide now whether you break style or break the scene.",
+        "Read a page aloud. Style you can hear is style; style you can only see is decoration."
+      ]
+    },
+    "style2": {
+      "heading": "Secondary style",
+      "questions": [
+        "Two styles in one book usually means two registers doing different jobs. What triggers the switch - a character, a timeline, a kind of scene?",
+        "If a reader cannot tell which register they are in from the first line of a section, the blend is mud rather than contrast."
+      ]
+    },
+    "tone": {
+      "heading": "Tone",
+      "questions": [
+        "Tone is what the narrator thinks of the events. What does yours think - and does the reader ever get to disagree?",
+        "Find the funniest moment and the bleakest moment you have planned. Can the same tone hold both? If not, which one moves?",
+        "Where does the tone break on purpose? A tone that never breaks is a tone the reader stops hearing."
+      ]
+    },
+    "tone2": {
+      "heading": "Secondary tone",
+      "questions": [
+        "Two tones is a contract: the reader has to learn when to expect which. What is the signal?",
+        "Which characters carry which tone? Tone that lives in the prose alone is harder to sustain than tone that lives in people."
+      ]
+    },
+    "theme": {
+      "heading": "Theme",
+      "questions": [
+        "Write the theme as a question, not a noun. Not 'betrayal' - 'what does someone owe a person who has already betrayed them?'",
+        "Who in the book is wrong about this theme, and is their case put strongly enough that a reader might side with them?",
+        "Where does the plot force a character to answer this question with an action rather than a speech? That scene is your book."
+      ]
+    },
+    "theme2": {
+      "heading": "Secondary theme",
+      "questions": [
+        "Do the two themes argue with each other, or just sit side by side? Only the first is worth having.",
+        "If you cut the second theme entirely, what would collapse? If the honest answer is nothing, it is a subject, not a theme."
+      ]
+    },
+    "setting": {
+      "heading": "Setting",
+      "questions": [
+        "What can happen here that could not happen anywhere else? If nothing, the setting is a backdrop and the reader will feel it.",
+        "What does this place cost the people who live in it - money, health, freedom, sleep?",
+        "Name one detail you would only know if you had stood in a place like this. Go and find it."
+      ]
+    },
+    "timePeriod": {
+      "heading": "Time period",
+      "questions": [
+        "What is impossible in this era that would solve your plot in a page? Guard it, because a reader will reach for it.",
+        "What did an ordinary person worry about in this period that has no modern equivalent?",
+        "Which of your characters' assumptions are yours rather than theirs? Those are the anachronisms readers actually notice."
+      ]
+    },
+    "pov": {
+      "heading": "Narrative perspective",
+      "questions": [
+        "What can this perspective not show? List three things. One of them should be doing structural work for you.",
+        "Whose head does the reader never get into, and what does that protect?",
+        "Why is this story being told at all, and to whom? Even a close third has an implied listener."
+      ]
+    },
+    "mood": {
+      "heading": "Mood & atmosphere",
+      "questions": [
+        "Mood comes from what the point-of-view character notices. What does yours notice first on walking into a room, and what do they never see?",
+        "Where does the mood lift? A single unbroken mood reads as one long note, however well played.",
+        "Name the weather, the light and the noise in your opening scene. If you cannot, the mood is an intention rather than a fact."
+      ]
+    },
+    "pacing": {
+      "heading": "Pacing",
+      "questions": [
+        "Where is the reader allowed to breathe? Mark the two or three places, and protect them - relentless is a synonym for exhausting.",
+        "Which scene are you most looking forward to writing? Everything before it is either preparation for it or in its way.",
+        "Read your chapter list. Where do two consecutive chapters do the same job? One of them goes."
+      ]
+    },
+    "dialogue": {
+      "heading": "Dialogue",
+      "questions": [
+        "Cover the speech tags. Can you still tell who is speaking? If not, the characters share a voice.",
+        "In your most important conversation, what is the thing neither person will say? That is what the scene is about.",
+        "Where does someone lie, and how does the reader find out without being told?"
+      ]
+    },
+    "opening": {
+      "heading": "Opening",
+      "questions": [
+        "Whose day is this, and why is it different from yesterday?",
+        "Delete your first paragraph. Is the book better? Try the first page.",
+        "What question does the opening plant that a reader would turn a page to answer? Name it in six words."
+      ]
+    },
+    "ending": {
+      "heading": "Ending",
+      "questions": [
+        "What does the protagonist understand on the last page that they could not have understood on the first?",
+        "Is this ending earned by something the reader saw, or delivered by something you introduced to deliver it?",
+        "Write the last line now, before the rest. You will change it, but everything you write will be aimed at something."
+      ]
+    },
+    "strength": {
+      "heading": "Character strength",
+      "questions": [
+        "Where does this strength make things worse? A strength that only helps is a superpower, and superpowers are not character.",
+        "What did it cost to acquire, and who paid?",
+        "Which other character is threatened by it?"
+      ]
+    },
+    "weakness": {
+      "heading": "Character weakness",
+      "questions": [
+        "What does this weakness protect them from? Nobody keeps a flaw that does no work for them.",
+        "Show me the scene where it costs them something they cannot get back.",
+        "Do they know about it? A weakness the character can see and a weakness they cannot are two different books."
+      ]
+    },
+    "wordCount": {
+      "heading": "Length",
+      "questions": [
+        "Is this length the shape of the story or the shape of the market? Both are legitimate answers, but know which one you are giving.",
+        "At this length, how many scenes can you actually afford? Count them before you outline."
+      ]
+    },
+    "chapters": {
+      "heading": "Chapters",
+      "questions": [
+        "What is a chapter for in this book - a scene, a day, a point of view, a turn? Pick one rule and hold it.",
+        "Where does a chapter end so a reader cannot stop?"
+      ]
+    },
+    "wbCivilization": {
+      "heading": "Civilisation & society",
+      "questions": [
+        "Who is at the bottom of this society, and what do they do all day?",
+        "How does someone move up, and how many actually manage it?",
+        "What does this civilisation punish that ours does not - and forgive that ours does not?"
+      ]
+    },
+    "wbGeography": {
+      "heading": "Geography & environment",
+      "questions": [
+        "Where does the food come from, and how far does it travel?",
+        "What natural feature has decided where the cities are?",
+        "What in this landscape kills the careless?"
+      ]
+    },
+    "wbStem": {
+      "heading": "Magic, science & technology",
+      "questions": [
+        "What does it cost, and who cannot afford it?",
+        "What is the one thing it definitively cannot do? Write the rule down, because your plot will lean on it.",
+        "Who controls access, and what do they do to people who acquire it another way?"
+      ]
+    },
+    "wbPolitics": {
+      "heading": "Politics & conflict",
+      "questions": [
+        "What does each side actually want, stated so plainly that a reader could sympathise with either?",
+        "Who profits from the conflict continuing?",
+        "What would peace cost, and which character is least able to pay it?"
+      ]
+    },
+    "wbRaces": {
+      "heading": "Races & beings",
+      "questions": [
+        "Where do the differences come from - biology, history, belief, or an old lie everyone still repeats?",
+        "What does one group get wrong about another, and how would a reader spot it before the characters do?",
+        "Are you describing a people, or a personality? Peoples contain arguments; personalities do not."
+      ]
+    },
+    "wbEconomy": {
+      "heading": "Economy & resources",
+      "questions": [
+        "What is scarce, and who decided it should be?",
+        "How does your protagonist pay rent? Money is character, and most books forget it.",
+        "What happens to someone here who cannot work?"
+      ]
+    },
+    "wbReligion": {
+      "heading": "Religion & mythology",
+      "questions": [
+        "What does an ordinary believer do on an ordinary Tuesday?",
+        "What does this belief demand that is genuinely hard?",
+        "Who does not believe, and what does that cost them socially?"
+      ]
+    },
+    "wbSociety": {
+      "heading": "Society & culture",
+      "questions": [
+        "What are the manners? Show me someone getting them wrong.",
+        "What is taboo, and what happens to the person who says it aloud?",
+        "What do people here do for fun, with no money?"
+      ]
+    },
+    "wbTravel": {
+      "heading": "Transportation & travel",
+      "questions": [
+        "How long does it take to cross the map, and does your plot respect that?",
+        "Who is allowed to travel, and who needs permission?",
+        "What does the journey do to people - what arrives that did not set out?"
+      ]
+    },
+    "wbCommunication": {
+      "heading": "Communication & media",
+      "questions": [
+        "How long does news take to travel, and who hears it first?",
+        "Who decides what is true here, and how are they wrong?",
+        "What can be kept secret in this world, and for how long? Plots die on this question."
+      ]
+    },
+    "childAgeGroup": {
+      "heading": "Age band",
+      "questions": [
+        "Read your opening page to a child in this band, or to yourself in their voice. Where did it get long?",
+        "What is this reader afraid of, at this age, that an adult has stopped taking seriously?",
+        "Who is reading it aloud, and does the sentence give them somewhere to breathe?"
+      ]
+    },
+    "childReadingLevel": {
+      "heading": "Reading level",
+      "questions": [
+        "Find the three hardest words on your first page. Are they doing enough work to justify themselves? Some will be - hard words are how vocabulary grows.",
+        "How long is your longest sentence? Read it aloud in one breath."
+      ]
+    },
+    "childTopic": {
+      "heading": "Topic",
+      "questions": [
+        "What does the child in the story do about this, without an adult solving it?",
+        "Where is the funny bit? Even serious topics need one, and children trust books that have them."
+      ]
+    },
+    "childTheme": {
+      "heading": "Theme",
+      "questions": [
+        "Can a child act this theme out, or does it only exist as an idea? Only the first survives the page.",
+        "What does the character get wrong first? Children learn from a character being wrong, not from one being right."
+      ]
+    },
+    "moral": {
+      "heading": "Moral",
+      "questions": [
+        "Delete every sentence that states the moral. Is it still there in what happens? That is the only place it works.",
+        "Who in the story disagrees with the moral, and are they allowed a fair point?",
+        "Does the character choose it, or is it handed to them? A handed-down moral teaches obedience, not the thing you meant."
+      ]
+    }
+  },
+  "options": {
+    "pov": {
+      "First Person Singular": [
+        "Your narrator is telling this to someone, from somewhere, at some point after it happened. Where are they standing, and how much do they already know?",
+        "What has to happen off the page because your narrator was not there? Make one of those absences do structural work."
+      ],
+      "First Person Plural": [
+        "Who is the 'we', and who has been excluded from it? A collective narrator is always drawing a line around somebody.",
+        "When does the 'we' crack and a single voice come through? That moment is the whole reason to use this."
+      ],
+      "Second Person": [
+        "Second person makes a claim about the reader. What claim is it making, and is it true for long enough to carry a book?"
+      ],
+      "Third Person Limited": [
+        "You get one consciousness. Which scene will you most want to leave it for, and how will you stage that scene so you do not have to?"
+      ],
+      "Third Person Multiple": [
+        "What is the rule for switching heads - chapter, section, scene? Break it once for effect and never by accident.",
+        "Rank your viewpoint characters by how much page time they get. Does that ranking match whose story this is?"
+      ],
+      "Third Person Omniscient": [
+        "An omniscient narrator is a character with opinions. What are theirs? A neutral omniscient narrator is head-hopping with better manners."
+      ],
+      "Unreliable Narrator": [
+        "What does the narrator believe that the reader must not? Mark the exact page where the reader first suspects - too early and the tension is gone, too late and it is a trick.",
+        "Is the narrator lying to the reader, or to themselves? These need completely different techniques."
+      ],
+      "Epistolary": [
+        "Every document has an author with a reason to write it and a reader in mind. Who kept these, and why?",
+        "What can this form not show - and what is the excuse for the documents that cover it?"
+      ],
+      "Stream of Consciousness": [
+        "Consciousness has a shape even when it has no punctuation. What is the underlying order - association, obsession, avoidance?"
+      ],
+      "In Medias Res": [
+        "You open mid-action, so the reader is holding questions rather than information. List the three they are holding, and say on which page each is answered."
+      ],
+      "Framed Narrative": [
+        "Why is the outer story being told at all? A frame that does nothing but introduce the inner story is a door with no room behind it."
+      ],
+      "Nonlinear Narrative": [
+        "What does the reader gain from this order that chronology would not give them? If the answer is 'suspense', check that it is not just withheld information.",
+        "Write your chapter list in chronological order, then in your order, side by side. Where the two disagree, that had better be a decision."
+      ],
+      "Reverse Chronology": [
+        "The reader knows the outcome and reads for cause. Every scene must therefore land as an explanation. What does the final scene - chronologically first - have to explain?"
+      ],
+      "Metafiction": [
+        "What does drawing attention to the artifice buy you that immersion would not? Answer this honestly, because the reader will ask it."
+      ]
+    },
+    "pacing": {
+      "Fast Pacing": [
+        "Fast pacing hides thin characters for about eighty pages. What is the plan for page eighty-one?"
+      ],
+      "Slow Pacing": [
+        "A slow book still burns. What is the reader's reason to stay in chapter two - not chapter ten?"
+      ],
+      "Variable Pacing": [
+        "Mark on your chapter list where it is fast and where it is slow. If the pattern is irregular rather than shaped, that is not variable pacing, it is inconsistency."
+      ],
+      "Pacing to Build Tension": [
+        "Tension needs a clock or a closing space. Which have you got, and does the reader know about it?"
+      ],
+      "Flashbacks": [
+        "Every flashback stops the present story. What does this one give back in exchange, and could it be given in a line of dialogue instead?"
+      ],
+      "Time Jumps": [
+        "What happened in the gap? Write it out, for yourself. Readers can tell the difference between a gap you chose and a gap you skipped."
+      ]
+    },
+    "style": {
+      "Stream of Consciousness": [
+        "Consciousness has a shape even when it has no punctuation. What is the underlying order - association, obsession, avoidance?"
+      ],
+      "Minimalist": [
+        "Minimalism puts the weight on what is left out. Name the thing this book never says. That is the whole technique."
+      ],
+      "Poetic/Flowery": [
+        "Find your three most beautiful sentences. Cut them. If the page is worse, keep them; if it is clearer, you have your answer about the rest."
+      ],
+      "Journalistic": [
+        "Journalistic prose earns trust by being verifiable. What is your equivalent of a source, inside the fiction?"
+      ],
+      "Dialect-Heavy": [
+        "Read a page aloud to someone who does not speak this dialect. Where did they stop understanding? That is your ceiling, and you choose where to sit under it.",
+        "Are you rendering a way of speaking, or spelling it phonetically? The second is much harder to read and rarely worth it."
+      ],
+      "One-Sentence Novel": [
+        "A sentence this long has to keep giving the reader somewhere to stand. What is the recurring structure - a list, a clause pattern, a refrain - that stops it becoming a wall?"
+      ],
+      "Gritty & Raw": [
+        "What is the hardest thing in this book, and are you showing it because the story needs it or because it is vivid? The reader can usually tell."
+      ],
+      "Satirical": [
+        "What exactly is the target, and does the book ever hit anyone weaker than itself? Satire that punches down reads as cruelty."
+      ]
+    },
+    "tone": {
+      "Humorous": [
+        "Where is it not funny? A comic novel with no floor underneath it exhausts a reader by page fifty."
+      ],
+      "Melancholic": [
+        "What does your protagonist still want? Melancholy without wanting is just weather."
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "a": "tone",
+      "b": "mood",
+      "question": "Your tone is {{tone}} and your mood is {{mood}}. Write one paragraph where they contradict each other. If it cannot be done, one of the two is decoration."
+    },
+    {
+      "a": "pov",
+      "b": "theme",
+      "question": "Your perspective is {{pov}} and your theme is {{theme}}. What does this perspective structurally prevent the reader from learning about that theme - and is that a problem or the whole point?"
+    },
+    {
+      "a": "setting",
+      "b": "wbEconomy",
+      "question": "{{setting}}, running on {{wbEconomy}}. Who is poor here, and what does poor look like in this specific place?"
+    },
+    {
+      "a": "strength",
+      "b": "weakness",
+      "question": "Write the scene where {{strength}} and {{weakness}} are the same trait seen from two sides. Most real characters are built exactly this way."
+    },
+    {
+      "a": "wbStem",
+      "b": "wbPolitics",
+      "question": "{{wbStem}} exists, and the central conflict is {{wbPolitics}}. Why has nobody used the first to end the second? Answer this before you outline, or a reader will ask it for you."
+    },
+    {
+      "a": "opening",
+      "b": "ending",
+      "question": "You open with {{opening}} and close with {{ending}}. Read the two side by side. Is the ending an answer to the opening, or a different book's ending?"
+    },
+    {
+      "a": "wbCommunication",
+      "b": "wbTravel",
+      "question": "News moves by {{wbCommunication}} and people move by {{wbTravel}}. Whichever is faster decides what kind of story you can tell. Which is it?"
+    },
+    {
+      "a": "childAgeGroup",
+      "b": "moral",
+      "question": "You are writing for {{childAgeGroup}} and the moral is {{moral}}. Is this an idea this reader can act on this week, or one they will only understand in ten years?"
+    },
+    {
+      "a": "timePeriod",
+      "b": "targetAudience",
+      "question": "{{timePeriod}}, written for {{targetAudience}}. What does this reader need explained, and where can you trust them?"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "voice-test",
+      "kind": [
+        "fiction",
+        "children"
+      ],
+      "minutes": 15,
+      "label": "The voice test",
+      "needs": [
+        "tone",
+        "style"
+      ],
+      "body": "Write 300 words of your protagonist describing a room they have been in a hundred times. Nothing happens. The tone is {{tone}} and the style is {{style}}. If the page is boring, the voice is not there yet - and no amount of plot will hide that."
+    },
+    {
+      "id": "worst-scene",
+      "kind": [
+        "fiction"
+      ],
+      "minutes": 20,
+      "label": "The scene you are avoiding",
+      "needs": [
+        "weakness"
+      ],
+      "body": "Write the scene where {{weakness}} costs your protagonist something they cannot get back. Write it badly if you have to. You are finding out whether you believe in the flaw."
+    },
+    {
+      "id": "no-dialogue",
+      "kind": [
+        "fiction",
+        "children"
+      ],
+      "minutes": 15,
+      "label": "Silence",
+      "needs": [
+        "setting"
+      ],
+      "body": "Two characters have an argument in {{setting}}. Neither of them speaks. 400 words. Anything you can only do with dialogue, you now have to do another way."
+    },
+    {
+      "id": "first-line",
+      "kind": [
+        "fiction",
+        "children",
+        "nonfiction"
+      ],
+      "minutes": 10,
+      "label": "Twenty openings",
+      "needs": [],
+      "body": "Write twenty first lines. Not twenty good ones - twenty. Number them. The first six will be the ones you already had in your head; the useful one is usually somewhere after twelve."
+    },
+    {
+      "id": "hostile-reader",
+      "kind": [
+        "nonfiction"
+      ],
+      "minutes": 20,
+      "label": "The hostile reader",
+      "needs": [
+        "premise"
+      ],
+      "body": "Your argument is: {{premise}}\n\nNow write the strongest possible page against it, in the voice of someone intelligent who disagrees. If you cannot write it well, you do not understand your own case well enough to make it."
+    },
+    {
+      "id": "one-object",
+      "kind": [
+        "fiction",
+        "children"
+      ],
+      "minutes": 12,
+      "label": "One object",
+      "needs": [
+        "timePeriod"
+      ],
+      "body": "Pick one everyday object from {{timePeriod}}. Write 250 words about a character using it, without naming the era, the year or any famous event. Period comes through hands, not through exposition."
+    },
+    {
+      "id": "walk-the-map",
+      "kind": [
+        "world"
+      ],
+      "minutes": 20,
+      "label": "Walk the map",
+      "needs": [
+        "wbGeography",
+        "wbTravel"
+      ],
+      "body": "Take an ordinary person - not your protagonist - across this world by {{wbTravel}}, through {{wbGeography}}. Where do they sleep? What do they eat? Who stops them and asks for papers? A world you cannot cross on foot in your head is a painted backdrop."
+    },
+    {
+      "id": "the-tuesday",
+      "kind": [
+        "world"
+      ],
+      "minutes": 15,
+      "label": "An ordinary Tuesday",
+      "needs": [
+        "wbSociety"
+      ],
+      "body": "One day in the life of someone with no power in this world, from waking to sleeping. No plot events. This is the test of whether the world exists below the level of your story, and it is the fastest way to find out that it does not."
+    },
+    {
+      "id": "read-aloud",
+      "kind": [
+        "children"
+      ],
+      "minutes": 10,
+      "label": "The read-aloud test",
+      "needs": [
+        "childAgeGroup"
+      ],
+      "body": "Read your first two pages aloud at full performance - voices and all - as if to {{childAgeGroup}}. Mark every place you had to take a breath mid-sentence, stumbled, or felt embarrassed. Those marks are the edit."
+    },
+    {
+      "id": "kill-the-adult",
+      "kind": [
+        "children"
+      ],
+      "minutes": 15,
+      "label": "Remove the adults",
+      "needs": [],
+      "body": "Take your central problem and remove every adult who could solve it. If the story collapses, the child is a passenger in their own book. Rebuild it so the child's decision is the one that matters."
+    },
+    {
+      "id": "chapter-one-summary",
+      "kind": [
+        "fiction",
+        "children",
+        "nonfiction"
+      ],
+      "minutes": 10,
+      "label": "One sentence per chapter",
+      "needs": [
+        "chapters"
+      ],
+      "body": "Write one sentence for each of your {{chapters}} chapters, saying what changes in it. Any chapter you cannot finish that sentence for does not exist yet. Any two sentences that are the same mean one chapter too many."
+    },
+    {
+      "id": "the-cut",
+      "kind": [
+        "fiction",
+        "children",
+        "nonfiction"
+      ],
+      "minutes": 20,
+      "label": "The ten per cent cut",
+      "needs": [],
+      "body": "Take any finished page and cut a tenth of the words without losing anything. Then do it again. The second pass is where you learn what your habits are - everybody has three or four, and they are always the same three or four."
+    }
+  ],
+  "beats": {
+    "note": "A three-act skeleton with the word budget worked out from the target length. Not a formula to obey - a set of load-bearing points, so a writer can see where the weight falls and decide where to disagree with it.",
+    "acts": [
+      {
+        "id": "act1",
+        "label": "Act One - Setup",
+        "share": 0.25,
+        "beats": [
+          {
+            "at": 0.0,
+            "label": "Opening image",
+            "note": "The first thing the reader sees. It should be the world as it is, so the ending has something to be measured against."
+          },
+          {
+            "at": 0.05,
+            "label": "The ordinary, disturbed",
+            "note": "Something arrives, breaks or is discovered. Not the main problem yet - the crack the main problem comes through."
+          },
+          {
+            "at": 0.12,
+            "label": "Refusal or delay",
+            "note": "Why the protagonist does not act immediately. Whatever holds them back is the first honest thing you tell us about them."
+          },
+          {
+            "at": 0.22,
+            "label": "The door closes",
+            "note": "The point of no return. Going back is now more expensive than going on."
+          }
+        ]
+      },
+      {
+        "id": "act2",
+        "label": "Act Two - Confrontation",
+        "share": 0.5,
+        "beats": [
+          {
+            "at": 0.3,
+            "label": "New rules",
+            "note": "The protagonist is somewhere they do not understand yet. Let them be bad at it."
+          },
+          {
+            "at": 0.38,
+            "label": "First real cost",
+            "note": "Something is lost that does not come back. Without this the reader stops believing in the stakes."
+          },
+          {
+            "at": 0.5,
+            "label": "The midpoint turn",
+            "note": "What the protagonist wanted turns out not to be what they need, or a fact arrives that reframes everything behind it. If nothing changes here, the middle will sag - it always sags at exactly this point."
+          },
+          {
+            "at": 0.62,
+            "label": "Pressure closes in",
+            "note": "The opposition is now acting, not reacting. Every option gets worse."
+          },
+          {
+            "at": 0.72,
+            "label": "The low point",
+            "note": "The plan fails. Not a setback - a failure, caused at least partly by the protagonist's own flaw."
+          }
+        ]
+      },
+      {
+        "id": "act3",
+        "label": "Act Three - Resolution",
+        "share": 0.25,
+        "beats": [
+          {
+            "at": 0.78,
+            "label": "The decision",
+            "note": "They choose. This is the scene the book exists for, and it should cost them the thing established in Act One."
+          },
+          {
+            "at": 0.86,
+            "label": "The climax",
+            "note": "The confrontation, in the arena the whole book has been pointing at."
+          },
+          {
+            "at": 0.94,
+            "label": "The cost paid",
+            "note": "What it took. Skipping this is why endings feel cheap."
+          },
+          {
+            "at": 0.98,
+            "label": "Closing image",
+            "note": "The opening image, changed. The reader measures the whole book against this one page."
+          }
+        ]
+      }
+    ],
+    "nonfiction": {
+      "label": "Argument structure",
+      "beats": [
+        {
+          "at": 0.0,
+          "label": "The claim",
+          "note": "What you are asserting, in one sentence, on the first page. Books that withhold their argument to build suspense are novels."
+        },
+        {
+          "at": 0.08,
+          "label": "Why it matters now",
+          "note": "The reader's reason to keep reading, stated as a cost of not knowing this."
+        },
+        {
+          "at": 0.18,
+          "label": "The received view",
+          "note": "What people currently believe, put fairly. A straw man loses the readers you most needed."
+        },
+        {
+          "at": 0.35,
+          "label": "The evidence",
+          "note": "Your strongest case, front-loaded. Do not save the best chapter for the end."
+        },
+        {
+          "at": 0.55,
+          "label": "The strongest objection",
+          "note": "Answered properly, in the open. This is where a sceptical reader decides whether to trust you."
+        },
+        {
+          "at": 0.72,
+          "label": "The complication",
+          "note": "Where your argument is weakest or least complete. Saying so is what separates a book from a pitch."
+        },
+        {
+          "at": 0.88,
+          "label": "What follows from it",
+          "note": "What the reader should do, think or notice differently on Monday."
+        },
+        {
+          "at": 0.97,
+          "label": "The restated claim",
+          "note": "The same sentence as page one, now carrying everything that came after it."
+        }
+      ]
+    }
+  }
+}

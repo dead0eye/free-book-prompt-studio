@@ -1,0 +1,268 @@
+{
+  "note": "The AI prompt templates. These are the formulas from the PROMPT sheet of Book Prompt.xlsx, rewritten as plain text with {{field}} placeholders. Unlike vocab.json they are maintained by hand - they change far less often than the vocabularies, and a spreadsheet formula is a miserable place to edit a paragraph. A placeholder whose field is unset is dropped along with the sentence containing it, so a half-filled form still produces a usable prompt. Writer mode does not use this file at all - its sheets are built in writer.js from data/craft.json.",
+  "version": "1.1.0",
+  "templates": [
+    {
+      "id": "fiction-story",
+      "label": "Fiction — the story prompt",
+      "kind": "fiction",
+      "summary": "The main prompt. Everything the model needs to start writing.",
+      "uses": [
+        "genre1",
+        "genre2",
+        "premise",
+        "setting",
+        "timePeriod",
+        "tone",
+        "tone2",
+        "style",
+        "style2",
+        "theme",
+        "theme2",
+        "pacing",
+        "wordCount",
+        "chapters",
+        "opening"
+      ],
+      "body": [
+        "Write a {{genre1}}{{ / genre2}} book about {{premise}}",
+        "The story is set in {{setting}}.",
+        "The time period is {{timePeriod}}.",
+        "The tone should be {{tone}}{{ and tone2}}.",
+        "Write it in a {{style}} style{{, with elements of style2}}.",
+        "The main themes are {{theme}}{{ and theme2}}.",
+        "The pacing should be {{pacing}}.",
+        "Aim for around {{wordCount}} words across {{chapters}} chapters.",
+        "Open with {{opening}}."
+      ]
+    },
+    {
+      "id": "fiction-structure",
+      "label": "Fiction — the structure instruction",
+      "kind": "fiction",
+      "summary": "The chapter-by-chapter working instruction. Send this straight after the story prompt.",
+      "uses": [
+        "ending"
+      ],
+      "fixed": true,
+      "body": [
+        "Write this story in stages, chapter by chapter, followed by the ending.",
+        "Give particular attention to the first chapter: the opening has to earn the reader's attention and pull them into the world.",
+        "Organise the whole within a three-act structure - setup, confrontation, resolution - so the arc resolves rather than stops.",
+        "Build tension gradually as you approach the climax; the ending should land harder for the pressure that preceded it.",
+        "The last line matters more than any other. It is the final impression the reader takes away. Make it count.",
+        "Write the ending as {{ending}}.",
+        "Stop after each chapter and wait for me to prompt the next one. If a chapter needs more room than you have given it, say so rather than compressing it."
+      ]
+    },
+    {
+      "id": "fiction-characters",
+      "label": "Fiction — character generation",
+      "kind": "fiction",
+      "summary": "Hand this the premise and get a cast back, rather than inventing one field at a time.",
+      "uses": [
+        "premise",
+        "setting",
+        "timePeriod",
+        "strength",
+        "weakness"
+      ],
+      "body": [
+        "I am writing a novel. Create a cast of characters for it - each with a name, a short description, a motivation or goal, their relationships to the others, one real strength and one real weakness.",
+        "This is a story about {{premise}}",
+        "The story is set in {{setting}}.",
+        "The time period is {{timePeriod}}.",
+        "At least one character should be defined by {{strength}}.",
+        "At least one should be undermined by {{weakness}}.",
+        "Give every character something they want that they are not going to get easily, and make sure at least two of them want incompatible things."
+      ]
+    },
+    {
+      "id": "worldbuilding",
+      "label": "Worldbuilding — the setting brief",
+      "kind": "world",
+      "summary": "Ten axes of a world. Roll them all, or set the two you care about and roll the rest.",
+      "uses": [
+        "timePeriod",
+        "wbCivilization",
+        "wbGeography",
+        "wbStem",
+        "wbPolitics",
+        "wbRaces",
+        "wbEconomy",
+        "wbReligion",
+        "wbSociety",
+        "wbTravel",
+        "wbCommunication"
+      ],
+      "body": [
+        "Build a setting for this book with a distinct and internally consistent world.",
+        "The era is {{timePeriod}}.",
+        "Society is organised as {{wbCivilization}}.",
+        "It takes place in {{wbGeography}}.",
+        "What powers this world is {{wbStem}}.",
+        "The central political struggle is {{wbPolitics}}.",
+        "The inhabitants are {{wbRaces}}.",
+        "The economy works on {{wbEconomy}}.",
+        "The people believe in {{wbReligion}}.",
+        "Their culture is shaped by {{wbSociety}}.",
+        "They travel by {{wbTravel}}.",
+        "Information spreads through {{wbCommunication}}.",
+        "Work out the consequences of these choices rather than just describing them. Where two of them are in tension, that tension is where the story is - say so explicitly."
+      ]
+    },
+    {
+      "id": "children-story",
+      "label": "Children's book — the story prompt",
+      "kind": "children",
+      "summary": "The children's equivalent of the fiction prompt, with age band, topic and moral.",
+      "uses": [
+        "genre1",
+        "genre2",
+        "childTopic",
+        "childTopic2",
+        "setting",
+        "timePeriod",
+        "place",
+        "tone",
+        "tone2",
+        "style",
+        "style2",
+        "childTheme",
+        "childTheme2",
+        "moral",
+        "moral2",
+        "childAgeGroup",
+        "pacing",
+        "wordCount",
+        "chapters"
+      ],
+      "body": [
+        "Write a children's book in the {{genre1}}{{ / genre2}} genre about {{childTopic}}{{ and childTopic2}}.",
+        "The story is set in {{setting}}.",
+        "The time period is {{timePeriod}}.",
+        "The action takes place at {{place}}.",
+        "The tone should be {{tone}}{{ and tone2}}.",
+        "Write it in a {{style}} style{{, with elements of style2}}.",
+        "The main themes are {{childTheme}}{{ and childTheme2}}.",
+        "The moral direction should be: {{moral}}{{ Also: moral2}}",
+        "The target audience is {{childAgeGroup}}.",
+        "The pacing should be {{pacing}}.",
+        "Aim for around {{wordCount}} words across {{chapters}} chapters.",
+        "Keep the vocabulary and sentence length appropriate to the age band. Do not moralise at the reader - let the moral come out of what happens."
+      ]
+    },
+    {
+      "id": "children-characters",
+      "label": "Children's book — character generation",
+      "kind": "children",
+      "summary": "Characters can be children, animals, magical creatures or objects.",
+      "uses": [
+        "childTopic",
+        "setting",
+        "childAgeGroup"
+      ],
+      "body": [
+        "I am writing a children's book. Create a cast of characters for it - they can be children, animals, magical creatures or objects. Give each a name, a short description, a motivation or goal, their relationships to the others, one strength and one weakness.",
+        "This is a story about {{childTopic}}.",
+        "It is set in {{setting}}.",
+        "The target audience is {{childAgeGroup}}.",
+        "Keep every character distinguishable by how they speak, not only by what they look like."
+      ]
+    },
+    {
+      "id": "nonfiction-brief",
+      "label": "Non-fiction — the book brief",
+      "kind": "nonfiction",
+      "summary": "The non-fiction counterpart: argument, audience, structure and voice.",
+      "uses": [
+        "nfGenre",
+        "premise",
+        "nfTopic",
+        "targetAudience",
+        "tone",
+        "style",
+        "wordCount",
+        "chapters"
+      ],
+      "body": [
+        "Write a non-fiction book in the {{nfGenre}} category.",
+        "The central argument is: {{premise}}",
+        "The specific topic is {{nfTopic}}.",
+        "The reader is {{targetAudience}}.",
+        "The tone should be {{tone}}.",
+        "Write it in a {{style}} style.",
+        "Aim for around {{wordCount}} words across {{chapters}} chapters.",
+        "Every chapter must carry one distinct idea and advance the central argument. If two chapters make the same point, merge them. Never pad to reach a chapter count.",
+        "Before writing anything, produce the chapter outline: for each chapter, one sentence on what it argues, the example or evidence that anchors it, and the takeaway the reader leaves with. Then stop."
+      ]
+    }
+  ],
+  "manualFields": [
+    {
+      "key": "title",
+      "label": "Working title",
+      "type": "text",
+      "kind": [
+        "fiction",
+        "children",
+        "nonfiction"
+      ],
+      "placeholder": "Untitled",
+      "hint": "Used as the heading on every worksheet and in the filename when you download one."
+    },
+    {
+      "key": "author",
+      "label": "Author",
+      "type": "text",
+      "kind": [
+        "fiction",
+        "children",
+        "nonfiction"
+      ],
+      "placeholder": "Your name"
+    },
+    {
+      "key": "premise",
+      "label": "Premise",
+      "type": "textarea",
+      "kind": [
+        "fiction",
+        "nonfiction"
+      ],
+      "placeholder": "a young woman who discovers she can control fire, in a world where magic is outlawed",
+      "hint": "The one sentence everything else hangs off. Write it as a continuation of \"a story about...\""
+    },
+    {
+      "key": "place",
+      "label": "Place & location",
+      "type": "text",
+      "kind": [
+        "children"
+      ],
+      "placeholder": "a lighthouse on a rocky coast"
+    },
+    {
+      "key": "wordCount",
+      "label": "Target word count",
+      "type": "number",
+      "default": 30000,
+      "kind": [
+        "fiction",
+        "children",
+        "nonfiction"
+      ]
+    },
+    {
+      "key": "chapters",
+      "label": "Chapters",
+      "type": "number",
+      "default": 12,
+      "kind": [
+        "fiction",
+        "children",
+        "nonfiction"
+      ]
+    }
+  ]
+}
