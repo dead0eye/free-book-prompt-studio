@@ -1,5 +1,7 @@
 # Book Prompt Studio
 
+**View demo - [https://dead0eye.github.io/free-book-prompt-studio/](https://dead0eye.github.io/free-book-prompt-studio/)**
+
 A planning tool for writers. Pick or roll from **1,343 curated options across 30 vocabularies
 and 131 genres**, and it turns those decisions into something you can work from.
 
