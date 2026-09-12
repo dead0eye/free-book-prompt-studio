@@ -5,7 +5,9 @@
 What began as a tangled spreadsheet full of formulas is now a lightweight, standalone app.
 No spreadsheet software required—just open and run.
 
-A planning tool for writers. Pick or roll from **1,343 curated options across 30 vocabularies
+## A planning tool for writers.
+
+Pick or roll from **1,343 curated options across 30 vocabularies
 and 131 genres**, and it turns those decisions into something you can work from.
 
 Two ways to use it, from the same set of choices:
