@@ -53,8 +53,8 @@ many people on many machines. Please report anything that breaks.
 ![Book Prompt Studio + World Building + Roll](screenshots/book-prompt-studio-worldbuilding-roll.jpg)
 ^ Book Prompt Studio + World Building + Roll
 
-![Book Prompt Studio + AI Prompt](screenshots/book-prompt-studio-aiprompt.jpg)
-^ Book Prompt Studio + AI Prompt
+![Book Prompt Studio + AI Prompt + Save and Download](screenshots/book-prompt-studio-aiprompt.jpg)
+^ Book Prompt Studio + AI Prompt + Save and Download
 
 ---
 
