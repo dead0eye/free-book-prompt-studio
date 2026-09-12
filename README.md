@@ -17,6 +17,26 @@ and five data files. **Double-click `index.html` and it runs.**
 
 ---
 
+## Version
+
+Version 1.0.0-beta - 9th September 2026
+First public release
+
+FIRST PUBLIC RELEASE - BETA
+
+Everything here works and has been tested, but it has not yet been used by
+many people on many machines. Please report anything that breaks.
+
+* Four modes, ~1,300 options across thirty vocabularies
+* Seven worksheets; six of them need no AI at all
+* Seeded rolling with pinning
+* Fillable worksheets - answers save, share and print
+* A4 printing, filled or blank
+* Named projects, file backup, shareable links
+* No account, no server, nothing uploaded
+
+---
+
 ## If you do not use AI
 
 Most of this app is not about AI, and the parts that are can be ignored entirely — there is no
