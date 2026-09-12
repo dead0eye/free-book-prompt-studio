@@ -203,5 +203,3 @@ your own tool. No attribution required, nothing to register.
 The code used to be MIT while the data was CC0. Two licences for one small project meant every
 contribution had to be sorted into the right bucket, and anyone reusing it had to read both.
 One licence, and the most permissive one, is simpler for everybody.
-
-Built by [GetFreeEbooks](https://getfreeebooks.com).
