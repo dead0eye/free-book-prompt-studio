@@ -45,16 +45,16 @@ many people on many machines. Please report anything that breaks.
 ## Screenshots
 
 ![Book Prompt Studio + Fiction + Character Sheet](screenshots/book-prompt-studio-fiction-char-sheet.jpg)
-^ Book Prompt Studio + Fiction + Character Sheet
+<sub>^ Book Prompt Studio + Fiction + Character Sheet</sub>
 
 ![Book Prompt Studio + Fiction Book brief + Export](screenshots/book-prompt-studio-fiction-bookbrief-export.jpg)
-^ Book Prompt Studio + Fiction Book brief + Export
+<sub>^ Book Prompt Studio + Fiction Book brief + Export</sub>
 
 ![Book Prompt Studio + World Building + Roll](screenshots/book-prompt-studio-worldbuilding-roll.jpg)
-^ Book Prompt Studio + World Building + Roll
+<sub>^ Book Prompt Studio + World Building + Roll</sub>
 
 ![Book Prompt Studio + AI Prompt + Save and Download](screenshots/book-prompt-studio-aiprompt.jpg)
-^ Book Prompt Studio + AI Prompt + Save and Download
+<sub>^ Book Prompt Studio + AI Prompt + Save and Download</sub>
 
 ---
 
